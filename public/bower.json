@@ -1,0 +1,22 @@
+{
+  "name": "node-auth",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Dustin Myers <dustint314@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/dustinmyers/node-auth",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.2",
+    "angular-ui-router": "ui-router#^0.2.18"
+  }
+}

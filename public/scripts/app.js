@@ -4,7 +4,7 @@
     angular
         .module('nodeAuth', [
             'ui-router'
-        ]).config(["$stateProvider", "$urlRouterProvider", "$locationProvider", "$httpProvider", function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
+        ]).config(["$stateProvider", "$urlRouterProvider", "$locationProvider", function ($stateProvider, $urlRouterProvider, $locationProvider) {
         //Clean urls - turn off # in urls
         $locationProvider.html5Mode(true);
         //Set default route
@@ -15,12 +15,12 @@
             .state('login', {
                 url: '/login',
                 templateUrl: 'views/login.html',
-                controller: 'MainCtrl as app'
+                controller: 'LoginCtrl as login'
             })
             .state('dashboard', {
                 url: '/dashboard',
-                templateUrl: window.SOC.static_path + 'gifts/views/giftStore.html',
-                controller: 'GiftStoreCtrl as gifts'
+                templateUrl: 'views/dashboard.html',
+                controller: 'DashCtrl as dash'
             });
     }]);
 });

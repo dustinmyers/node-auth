@@ -1,0 +1,28 @@
+{
+  "name": "node-auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dustinmyers/node-auth.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dustinmyers/node-auth/issues"
+  },
+  "homepage": "https://github.com/dustinmyers/node-auth#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "mongodb": "^2.1.10",
+    "mongoose": "^4.4.8"
+  }
+}
