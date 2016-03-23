@@ -3,24 +3,23 @@
 
     angular
         .module('nodeAuth', [
-            'ui-router'
-        ]).config(["$stateProvider", "$urlRouterProvider", "$locationProvider", function ($stateProvider, $urlRouterProvider, $locationProvider) {
-        //Clean urls - turn off # in urls
-        $locationProvider.html5Mode(true);
+            'ui.router'
+        ]).config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $urlRouterProvider) {
+
         //Set default route
-        $urlRouterProvider.otherwise("/login");
+        $urlRouterProvider.otherwise("/");
 
         //Set states for the giftshop app
         $stateProvider
             .state('login', {
-                url: '/login',
+                url: '/',
                 templateUrl: 'views/login.html',
-                controller: 'LoginCtrl as login'
+                controller: 'AuthCtrl as login'
             })
             .state('dashboard', {
                 url: '/dashboard',
                 templateUrl: 'views/dashboard.html',
-                controller: 'DashCtrl as dash'
+                controller: 'DashboardCtrl as dash'
             });
     }]);
-});
+})();

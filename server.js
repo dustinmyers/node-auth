@@ -15,21 +15,6 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(cors());
 app.use(express.static(__dirname + '/public'));
 
-app.use(session({
-    secret: 'carpediem',
-    saveUninitialized: false,
-    resave: false
-}));
-
-var isAuthenticated = function (req, res, next) {
-    if (req.session.user) {
-        next();
-    } else {
-        return res.status(403).send('Please login first')
-    }
-};
-
-
 // MongoDB
 var mongoUri = 'mongodb://localhost:27017/node-auth';
 mongoose.connect(mongoUri);
