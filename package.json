@@ -23,6 +23,8 @@
     "express": "^4.13.4",
     "express-session": "^1.13.0",
     "mongodb": "^2.1.10",
-    "mongoose": "^4.4.8"
+    "mongoose": "^4.4.8",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
   }
 }
