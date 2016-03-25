@@ -13,6 +13,13 @@
             });
         };
 
+        _this.register = function(user) {
+          authService.register(user).then(function(res) {
+              console.log(res);
+              //$state.go('dashboard');
+          });
+        }
+
     }
 
     angular
